@@ -13,6 +13,17 @@
 		798F5D8A1B2CA80700F50EA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798F5D891B2CA80700F50EA0 /* Images.xcassets */; };
 		798F5D8D1B2CA80700F50EA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798F5D8B1B2CA80700F50EA0 /* LaunchScreen.xib */; };
 		798F5D991B2CA80700F50EA0 /* animalNoisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F5D981B2CA80700F50EA0 /* animalNoisesTests.swift */; };
+		798F5DA31B2CA83D00F50EA0 /* Cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DA21B2CA83D00F50EA0 /* Cat.mp3 */; };
+		798F5DA51B2CA85A00F50EA0 /* Lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DA41B2CA85A00F50EA0 /* Lion.mp3 */; };
+		798F5DA71B2CA88400F50EA0 /* Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DA61B2CA88400F50EA0 /* Horse.mp3 */; };
+		798F5DA91B2CA89B00F50EA0 /* Cow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DA81B2CA89B00F50EA0 /* Cow.mp3 */; };
+		798F5DAB1B2CA8BA00F50EA0 /* Quack_Quack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DAA1B2CA8BA00F50EA0 /* Quack_Quack.mp3 */; };
+		798F5DAD1B2CA8D100F50EA0 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DAC1B2CA8D100F50EA0 /* Rooster.mp3 */; };
+		798F5DAF1B2CA90400F50EA0 /* On_The_Farm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DAE1B2CA90400F50EA0 /* On_The_Farm.mp3 */; };
+		798F5DB11B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F5DB01B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift */; };
+		798F5DB31B2CB61800F50EA0 /* Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB21B2CB61800F50EA0 /* Monkey.mp3 */; };
+		798F5DB51B2CB65200F50EA0 /* Elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB41B2CB65200F50EA0 /* Elephant.mp3 */; };
+		798F5DB71B2CB66F00F50EA0 /* Gorilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB61B2CB66F00F50EA0 /* Gorilla.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,17 @@
 		798F5D921B2CA80700F50EA0 /* animalNoisesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animalNoisesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		798F5D971B2CA80700F50EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798F5D981B2CA80700F50EA0 /* animalNoisesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalNoisesTests.swift; sourceTree = "<group>"; };
+		798F5DA21B2CA83D00F50EA0 /* Cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cat.mp3; path = ../../../../Downloads/Cat.mp3; sourceTree = "<group>"; };
+		798F5DA41B2CA85A00F50EA0 /* Lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Lion.mp3; path = ../../../../Downloads/Lion.mp3; sourceTree = "<group>"; };
+		798F5DA61B2CA88400F50EA0 /* Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Horse.mp3; path = ../../../../Downloads/Horse.mp3; sourceTree = "<group>"; };
+		798F5DA81B2CA89B00F50EA0 /* Cow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cow.mp3; path = ../../../../Downloads/Cow.mp3; sourceTree = "<group>"; };
+		798F5DAA1B2CA8BA00F50EA0 /* Quack_Quack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Quack_Quack.mp3; path = ../../../../Downloads/Quack_Quack.mp3; sourceTree = "<group>"; };
+		798F5DAC1B2CA8D100F50EA0 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rooster.mp3; path = ../../../../Downloads/Rooster.mp3; sourceTree = "<group>"; };
+		798F5DAE1B2CA90400F50EA0 /* On_The_Farm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = On_The_Farm.mp3; path = ../../../../Downloads/On_The_Farm.mp3; sourceTree = "<group>"; };
+		798F5DB01B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JungleAnimalsViewController.swift; sourceTree = "<group>"; };
+		798F5DB21B2CB61800F50EA0 /* Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Monkey.mp3; path = ../../../../Downloads/Monkey.mp3; sourceTree = "<group>"; };
+		798F5DB41B2CB65200F50EA0 /* Elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Elephant.mp3; path = ../../../../Downloads/Elephant.mp3; sourceTree = "<group>"; };
+		798F5DB61B2CB66F00F50EA0 /* Gorilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Gorilla.mp3; path = ../../../../Downloads/Gorilla.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,16 @@
 				798F5D7F1B2CA80700F50EA0 /* animalNoises */,
 				798F5D951B2CA80700F50EA0 /* animalNoisesTests */,
 				798F5D7E1B2CA80700F50EA0 /* Products */,
+				798F5DA21B2CA83D00F50EA0 /* Cat.mp3 */,
+				798F5DA41B2CA85A00F50EA0 /* Lion.mp3 */,
+				798F5DA61B2CA88400F50EA0 /* Horse.mp3 */,
+				798F5DA81B2CA89B00F50EA0 /* Cow.mp3 */,
+				798F5DAA1B2CA8BA00F50EA0 /* Quack_Quack.mp3 */,
+				798F5DAC1B2CA8D100F50EA0 /* Rooster.mp3 */,
+				798F5DAE1B2CA90400F50EA0 /* On_The_Farm.mp3 */,
+				798F5DB21B2CB61800F50EA0 /* Monkey.mp3 */,
+				798F5DB41B2CB65200F50EA0 /* Elephant.mp3 */,
+				798F5DB61B2CB66F00F50EA0 /* Gorilla.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +115,7 @@
 				798F5D891B2CA80700F50EA0 /* Images.xcassets */,
 				798F5D8B1B2CA80700F50EA0 /* LaunchScreen.xib */,
 				798F5D801B2CA80700F50EA0 /* Supporting Files */,
+				798F5DB01B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift */,
 			);
 			path = animalNoises;
 			sourceTree = "<group>";
@@ -193,8 +226,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				798F5D881B2CA80700F50EA0 /* Main.storyboard in Resources */,
+				798F5DA51B2CA85A00F50EA0 /* Lion.mp3 in Resources */,
+				798F5DA71B2CA88400F50EA0 /* Horse.mp3 in Resources */,
+				798F5DA91B2CA89B00F50EA0 /* Cow.mp3 in Resources */,
+				798F5DAD1B2CA8D100F50EA0 /* Rooster.mp3 in Resources */,
+				798F5DB71B2CB66F00F50EA0 /* Gorilla.mp3 in Resources */,
+				798F5DB31B2CB61800F50EA0 /* Monkey.mp3 in Resources */,
 				798F5D8D1B2CA80700F50EA0 /* LaunchScreen.xib in Resources */,
 				798F5D8A1B2CA80700F50EA0 /* Images.xcassets in Resources */,
+				798F5DAB1B2CA8BA00F50EA0 /* Quack_Quack.mp3 in Resources */,
+				798F5DA31B2CA83D00F50EA0 /* Cat.mp3 in Resources */,
+				798F5DAF1B2CA90400F50EA0 /* On_The_Farm.mp3 in Resources */,
+				798F5DB51B2CB65200F50EA0 /* Elephant.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +257,7 @@
 			files = (
 				798F5D851B2CA80700F50EA0 /* ViewController.swift in Sources */,
 				798F5D831B2CA80700F50EA0 /* AppDelegate.swift in Sources */,
+				798F5DB11B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

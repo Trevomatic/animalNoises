@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animalNoises" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,271 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USz-NY-hg0">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cv9-53-4JP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-I8-2My">
+                                <rect key="frame" x="277" y="330" width="46" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DqW-Hl-06M"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Gp-Xs-nzg">
+                                <rect key="frame" x="330" y="550" width="256" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="i4J-ul-vNH"/>
+                                    <constraint firstAttribute="width" constant="150" id="qCP-Ei-aSb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qCP-Ei-aSb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="adjustVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bnb-Wy-Mbo"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnY-dG-80L">
+                                <rect key="frame" x="202" y="245" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xur-Si-c9V">
+                                <rect key="frame" x="250" y="368" width="100" height="30"/>
+                                <state key="normal" title="JungleAnimals">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GmL-AJ-257" kind="show" id="VyA-Qw-3ei"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Gp-Xs-nzg" firstAttribute="top" secondItem="Oat-I8-2My" secondAttribute="bottom" constant="21" id="1I4-Zk-dMH"/>
+                            <constraint firstItem="Xur-Si-c9V" firstAttribute="top" secondItem="Oat-I8-2My" secondAttribute="bottom" constant="8" id="7a0-pq-fLH"/>
+                            <constraint firstAttribute="centerX" secondItem="USz-NY-hg0" secondAttribute="centerX" id="As8-kF-7UF"/>
+                            <constraint firstItem="3Gp-Xs-nzg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BOl-hZ-5sq"/>
+                            <constraint firstAttribute="centerX" secondItem="3Gp-Xs-nzg" secondAttribute="centerX" id="Tfi-g2-pvh"/>
+                            <constraint firstAttribute="centerY" secondItem="USz-NY-hg0" secondAttribute="centerY" id="WJD-HS-OAz"/>
+                            <constraint firstItem="Oat-I8-2My" firstAttribute="top" secondItem="USz-NY-hg0" secondAttribute="bottom" constant="15" id="ir4-om-h22"/>
+                            <constraint firstAttribute="centerX" secondItem="Xur-Si-c9V" secondAttribute="centerX" id="mbj-5n-bJW"/>
+                            <constraint firstAttribute="centerX" secondItem="Oat-I8-2My" secondAttribute="centerX" id="oX1-gA-eqN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Gp-Xs-nzg" secondAttribute="bottom" constant="20" id="q9F-AM-5b7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1I4-Zk-dMH"/>
+                                <exclude reference="Tfi-g2-pvh"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="volumeControl" destination="3Gp-Xs-nzg" id="Xbs-9i-byh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Jungle Animals-->
+        <scene sceneID="Pam-sC-bYD">
+            <objects>
+                <viewController title="Jungle Animals" id="GmL-AJ-257" customClass="JungleAnimalsViewController" customModule="animalNoises" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LAb-5M-Mgs"/>
+                        <viewControllerLayoutGuide type="bottom" id="xR8-CO-TSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="IYH-jW-b97">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDm-4v-kod">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Kip-Aw-QNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwn-2V-f3b">
+                                <rect key="frame" x="196" y="196" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bl5-59-Uyt"/>
+                                    <constraint firstAttribute="width" constant="100" id="G5f-Lw-njx"/>
+                                </constraints>
+                                <state key="normal" image="Animal-elephant">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="E0K-zp-Rvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBD-wx-Eh9">
+                                <rect key="frame" x="304" y="196" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Tae-bU-s2S"/>
+                                    <constraint firstAttribute="width" constant="100" id="WsC-54-CxH"/>
+                                </constraints>
+                                <state key="normal" image="Animal-gorilla">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="d1n-HI-ZXu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-If-wDu">
+                                <rect key="frame" x="196" y="304" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gN6-pX-qns"/>
+                                    <constraint firstAttribute="width" constant="100" id="m0L-m2-iJw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Animal-monkey">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="Fvj-JL-6M3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mr2-mr-8dF">
+                                <rect key="frame" x="304" y="304" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LUj-OX-WZF"/>
+                                    <constraint firstAttribute="width" constant="100" id="Phr-8J-1DU"/>
+                                </constraints>
+                                <state key="normal" image="Animal-Lion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="pee-M6-o4J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Great Job!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-SO-efF">
+                                <rect key="frame" x="16" y="84" width="568" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xsQ-Tm-5Xx">
+                                <rect key="frame" x="223" y="550" width="154" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="a01-7u-ilO"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustVolume:" destination="GmL-AJ-257" eventType="valueChanged" id="yPR-jV-IAD"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyp-ky-3jD">
+                                <rect key="frame" x="285" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="5gy-A2-V9l"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="GmL-AJ-257" eventType="touchUpInside" id="DHg-Qx-RA3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdQ-e5-6U3">
+                                <rect key="frame" x="551" y="20" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="GmL-AJ-257" eventType="touchUpInside" id="hq1-an-KIm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0z-oz-k8q">
+                                <rect key="frame" x="259" y="507" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="urF-Fs-hB6"/>
+                                </constraints>
+                                <state key="normal" title="Next Animal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="urF-Fs-hB6"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="zbm-J8-N04"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xsQ-Tm-5Xx" firstAttribute="trailing" secondItem="IYH-jW-b97" secondAttribute="trailingMargin" id="1pf-XL-lhw"/>
+                            <constraint firstItem="xsQ-Tm-5Xx" firstAttribute="top" secondItem="X0z-oz-k8q" secondAttribute="bottom" constant="13" id="4G0-Si-giI"/>
+                            <constraint firstItem="xR8-CO-TSq" firstAttribute="top" secondItem="X0z-oz-k8q" secondAttribute="bottom" constant="20" id="650-t5-wXq"/>
+                            <constraint firstItem="RDm-4v-kod" firstAttribute="leading" secondItem="IYH-jW-b97" secondAttribute="leadingMargin" id="8cR-st-ceg"/>
+                            <constraint firstItem="jdQ-e5-6U3" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="AVS-cz-RtS"/>
+                            <constraint firstItem="gnQ-SO-efF" firstAttribute="leading" secondItem="IYH-jW-b97" secondAttribute="leadingMargin" id="EXZ-z0-HHM"/>
+                            <constraint firstAttribute="centerX" secondItem="xsQ-Tm-5Xx" secondAttribute="centerX" id="KA5-lJ-e0m"/>
+                            <constraint firstAttribute="centerY" secondItem="Mr2-mr-8dF" secondAttribute="centerY" constant="-54" id="LIa-Zd-wIs"/>
+                            <constraint firstAttribute="centerX" secondItem="vyp-ky-3jD" secondAttribute="centerX" constant="35" id="Oih-56-5ZH"/>
+                            <constraint firstItem="vyp-ky-3jD" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="Q5t-GQ-RQL"/>
+                            <constraint firstAttribute="centerX" secondItem="vyp-ky-3jD" secondAttribute="centerX" id="QkW-He-FZV"/>
+                            <constraint firstAttribute="centerY" secondItem="e4L-If-wDu" secondAttribute="centerY" constant="-54" id="TMt-a1-WiU"/>
+                            <constraint firstItem="vyp-ky-3jD" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="Tgm-uD-C8b"/>
+                            <constraint firstAttribute="centerY" secondItem="yBD-wx-Eh9" secondAttribute="centerY" constant="54" id="UqW-p6-1Nd"/>
+                            <constraint firstAttribute="centerX" secondItem="X0z-oz-k8q" secondAttribute="centerX" id="VGn-e0-2pR"/>
+                            <constraint firstItem="gnQ-SO-efF" firstAttribute="trailing" secondItem="IYH-jW-b97" secondAttribute="trailingMargin" id="Vsk-bb-wId"/>
+                            <constraint firstAttribute="centerX" secondItem="pwn-2V-f3b" secondAttribute="centerX" constant="54" id="XLO-Jz-smx"/>
+                            <constraint firstAttribute="centerY" secondItem="pwn-2V-f3b" secondAttribute="centerY" constant="54" id="Z15-np-pzi"/>
+                            <constraint firstItem="vyp-ky-3jD" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="efB-lt-y9v"/>
+                            <constraint firstItem="X0z-oz-k8q" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="iUb-VY-7jN"/>
+                            <constraint firstItem="pwn-2V-f3b" firstAttribute="top" secondItem="gnQ-SO-efF" secondAttribute="bottom" constant="29" id="jWQ-a8-0YA"/>
+                            <constraint firstAttribute="centerX" secondItem="e4L-If-wDu" secondAttribute="centerX" constant="54" id="lL0-Qd-GOh"/>
+                            <constraint firstAttribute="centerX" secondItem="Mr2-mr-8dF" secondAttribute="centerX" constant="-54" id="lSb-8G-A6O"/>
+                            <constraint firstItem="jdQ-e5-6U3" firstAttribute="trailing" secondItem="IYH-jW-b97" secondAttribute="trailingMargin" id="len-c4-iAX"/>
+                            <constraint firstItem="RDm-4v-kod" firstAttribute="top" secondItem="LAb-5M-Mgs" secondAttribute="bottom" id="n3l-fC-xQz"/>
+                            <constraint firstItem="xR8-CO-TSq" firstAttribute="top" secondItem="xsQ-Tm-5Xx" secondAttribute="bottom" constant="20" id="tNZ-hl-GyP"/>
+                            <constraint firstAttribute="centerX" secondItem="yBD-wx-Eh9" secondAttribute="centerX" constant="-54" id="yeg-mS-YsI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Oih-56-5ZH"/>
+                                <exclude reference="Tgm-uD-C8b"/>
+                                <exclude reference="efB-lt-y9v"/>
+                                <exclude reference="iUb-VY-7jN"/>
+                                <exclude reference="1pf-XL-lhw"/>
+                                <exclude reference="650-t5-wXq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="gnQ-SO-efF" id="XKZ-kh-nan"/>
+                        <outlet property="nextButton" destination="X0z-oz-k8q" id="ZX4-wp-iYn"/>
+                        <outlet property="playButton" destination="vyp-ky-3jD" id="Ocl-iq-RCM"/>
+                        <outlet property="volumeControl" destination="xsQ-Tm-5Xx" id="Yto-0c-bYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JjF-9j-Uir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="323"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Animal-Lion" width="600" height="400"/>
+        <image name="Animal-elephant" width="600" height="400"/>
+        <image name="Animal-gorilla" width="236" height="354"/>
+        <image name="Animal-monkey" width="600" height="400"/>
+    </resources>
 </document>
