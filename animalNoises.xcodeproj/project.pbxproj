@@ -24,6 +24,7 @@
 		798F5DB31B2CB61800F50EA0 /* Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB21B2CB61800F50EA0 /* Monkey.mp3 */; };
 		798F5DB51B2CB65200F50EA0 /* Elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB41B2CB65200F50EA0 /* Elephant.mp3 */; };
 		798F5DB71B2CB66F00F50EA0 /* Gorilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798F5DB61B2CB66F00F50EA0 /* Gorilla.mp3 */; };
+		798F5DB91B2CE0D600F50EA0 /* FarmAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F5DB81B2CE0D600F50EA0 /* FarmAnimalsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		798F5DB21B2CB61800F50EA0 /* Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Monkey.mp3; path = ../../../../Downloads/Monkey.mp3; sourceTree = "<group>"; };
 		798F5DB41B2CB65200F50EA0 /* Elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Elephant.mp3; path = ../../../../Downloads/Elephant.mp3; sourceTree = "<group>"; };
 		798F5DB61B2CB66F00F50EA0 /* Gorilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Gorilla.mp3; path = ../../../../Downloads/Gorilla.mp3; sourceTree = "<group>"; };
+		798F5DB81B2CE0D600F50EA0 /* FarmAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmAnimalsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				798F5D8B1B2CA80700F50EA0 /* LaunchScreen.xib */,
 				798F5D801B2CA80700F50EA0 /* Supporting Files */,
 				798F5DB01B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift */,
+				798F5DB81B2CE0D600F50EA0 /* FarmAnimalsViewController.swift */,
 			);
 			path = animalNoises;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798F5DB91B2CE0D600F50EA0 /* FarmAnimalsViewController.swift in Sources */,
 				798F5D851B2CA80700F50EA0 /* ViewController.swift in Sources */,
 				798F5D831B2CA80700F50EA0 /* AppDelegate.swift in Sources */,
 				798F5DB11B2CAF6B00F50EA0 /* JungleAnimalsViewController.swift in Sources */,

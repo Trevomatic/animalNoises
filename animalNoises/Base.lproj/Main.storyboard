@@ -65,6 +65,15 @@
                                     <segue destination="GmL-AJ-257" kind="show" id="VyA-Qw-3ei"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-NY-qIP">
+                                <rect key="frame" x="256" y="406" width="94" height="30"/>
+                                <state key="normal" title="Farm Animals">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="07h-Dq-hRS" kind="show" id="Vex-Xn-Mp6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -72,8 +81,10 @@
                             <constraint firstItem="Xur-Si-c9V" firstAttribute="top" secondItem="Oat-I8-2My" secondAttribute="bottom" constant="8" id="7a0-pq-fLH"/>
                             <constraint firstAttribute="centerX" secondItem="USz-NY-hg0" secondAttribute="centerX" id="As8-kF-7UF"/>
                             <constraint firstItem="3Gp-Xs-nzg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BOl-hZ-5sq"/>
+                            <constraint firstItem="lVL-NY-qIP" firstAttribute="top" secondItem="Xur-Si-c9V" secondAttribute="bottom" constant="8" id="Qcj-ut-w8j"/>
                             <constraint firstAttribute="centerX" secondItem="3Gp-Xs-nzg" secondAttribute="centerX" id="Tfi-g2-pvh"/>
                             <constraint firstAttribute="centerY" secondItem="USz-NY-hg0" secondAttribute="centerY" id="WJD-HS-OAz"/>
+                            <constraint firstAttribute="centerX" secondItem="lVL-NY-qIP" secondAttribute="centerX" constant="-3" id="hlT-54-liN"/>
                             <constraint firstItem="Oat-I8-2My" firstAttribute="top" secondItem="USz-NY-hg0" secondAttribute="bottom" constant="15" id="ir4-om-h22"/>
                             <constraint firstAttribute="centerX" secondItem="Xur-Si-c9V" secondAttribute="centerX" id="mbj-5n-bJW"/>
                             <constraint firstAttribute="centerX" secondItem="Oat-I8-2My" secondAttribute="centerX" id="oX1-gA-eqN"/>
@@ -170,12 +181,6 @@
                                     <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="pee-M6-o4J"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Great Job!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-SO-efF">
-                                <rect key="frame" x="16" y="84" width="568" height="83"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xsQ-Tm-5Xx">
                                 <rect key="frame" x="223" y="550" width="154" height="31"/>
                                 <constraints>
@@ -223,6 +228,12 @@
                                     <action selector="nextButtonPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="zbm-J8-N04"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Great Job!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-SO-efF">
+                                <rect key="frame" x="16" y="84" width="568" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -274,7 +285,173 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JjF-9j-Uir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="323"/>
+            <point key="canvasLocation" x="941" y="-58"/>
+        </scene>
+        <!--Farm Animals-->
+        <scene sceneID="iL3-x0-lsB">
+            <objects>
+                <viewController title="Farm Animals" id="07h-Dq-hRS" customClass="FarmAnimalsViewController" customModule="animalNoises" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zq8-jW-yus"/>
+                        <viewControllerLayoutGuide type="bottom" id="BKN-Pq-ufd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4f-6C-zfd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spC-Sd-oAm">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bEb-kf-eLJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxZ-QT-QDv">
+                                <rect key="frame" x="277" y="20" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="07h-Dq-hRS" eventType="touchUpInside" id="zgH-Xg-SzG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ov-87-eiV">
+                                <rect key="frame" x="551" y="20" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="07h-Dq-hRS" eventType="touchUpInside" id="5b9-FP-lcI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-r5-a7y">
+                                <rect key="frame" x="196" y="196" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Blb-YI-W2F"/>
+                                    <constraint firstAttribute="height" constant="100" id="Skq-17-gGM"/>
+                                </constraints>
+                                <state key="normal" image="Horse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="6AR-nu-y2g"/>
+                                    <action selector="jungleAnimalPressed:" destination="07h-Dq-hRS" eventType="touchUpInside" id="Xva-B6-wDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgH-Wt-iBR">
+                                <rect key="frame" x="304" y="196" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D10-fV-ix8"/>
+                                    <constraint firstAttribute="width" constant="100" id="qqc-Oe-69E"/>
+                                </constraints>
+                                <state key="normal" image="Rooster">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="07h-Dq-hRS" eventType="touchUpInside" id="4aP-S5-CP3"/>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="ASk-9D-dOx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOA-Og-qHi">
+                                <rect key="frame" x="304" y="304" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9f2-bc-fHB"/>
+                                    <constraint firstAttribute="height" constant="100" id="hVh-JN-7FB"/>
+                                </constraints>
+                                <state key="normal" image="cat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="07h-Dq-hRS" eventType="touchUpInside" id="IUC-kB-adE"/>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="dCH-fT-Vsm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fC-yk-dny">
+                                <rect key="frame" x="196" y="304" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="y18-o7-Mli"/>
+                                    <constraint firstAttribute="width" constant="100" id="z7V-lA-6Lp"/>
+                                </constraints>
+                                <state key="normal" image="cow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jungleAnimalPressed:" destination="GmL-AJ-257" eventType="touchUpInside" id="DIu-JC-Rd3"/>
+                                    <action selector="jungleAnimalPressed:" destination="07h-Dq-hRS" eventType="touchUpInside" id="XE0-VJ-RF4"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zw0-sc-pOn">
+                                <rect key="frame" x="233" y="550" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="B0Q-8q-yqt"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustVolume:" destination="07h-Dq-hRS" eventType="valueChanged" id="ciW-tE-bAI"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGA-U6-suk">
+                                <rect key="frame" x="258" y="512" width="83" height="30"/>
+                                <state key="normal" title="Next Animal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="07h-Dq-hRS" eventType="touchUpInside" id="vD0-0l-wmC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bt-xZ-j96">
+                                <rect key="frame" x="16" y="80" width="568" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mj2-r5-a7y" firstAttribute="top" secondItem="9Bt-xZ-j96" secondAttribute="bottom" constant="29" id="1XW-Db-YI1"/>
+                            <constraint firstAttribute="centerX" secondItem="8fC-yk-dny" secondAttribute="centerX" constant="54" id="2Rp-yL-aIJ"/>
+                            <constraint firstAttribute="centerY" secondItem="bOA-Og-qHi" secondAttribute="centerY" constant="-54" id="3an-3n-ri6"/>
+                            <constraint firstAttribute="centerX" secondItem="bOA-Og-qHi" secondAttribute="centerX" constant="-54" id="4j2-pn-9tc"/>
+                            <constraint firstItem="xxZ-QT-QDv" firstAttribute="top" secondItem="zq8-jW-yus" secondAttribute="bottom" id="6A0-tf-XyO"/>
+                            <constraint firstAttribute="centerY" secondItem="8fC-yk-dny" secondAttribute="centerY" constant="-54" id="7jj-7E-KYf"/>
+                            <constraint firstItem="2ov-87-eiV" firstAttribute="trailing" secondItem="b4f-6C-zfd" secondAttribute="trailingMargin" id="7qQ-uE-wj0"/>
+                            <constraint firstItem="spC-Sd-oAm" firstAttribute="leading" secondItem="b4f-6C-zfd" secondAttribute="leadingMargin" id="Fwk-DF-S3g"/>
+                            <constraint firstItem="BKN-Pq-ufd" firstAttribute="top" secondItem="zw0-sc-pOn" secondAttribute="bottom" constant="20" id="KGc-OU-L6P"/>
+                            <constraint firstAttribute="centerX" secondItem="zw0-sc-pOn" secondAttribute="centerX" id="Mtf-P5-LbH"/>
+                            <constraint firstAttribute="centerX" secondItem="Mj2-r5-a7y" secondAttribute="centerX" constant="54" id="Nwv-Ff-QnF"/>
+                            <constraint firstAttribute="centerY" secondItem="MgH-Wt-iBR" secondAttribute="centerY" constant="54" id="SY3-15-VSH"/>
+                            <constraint firstAttribute="centerX" secondItem="nGA-U6-suk" secondAttribute="centerX" id="WGb-RX-qEv"/>
+                            <constraint firstItem="zw0-sc-pOn" firstAttribute="top" secondItem="nGA-U6-suk" secondAttribute="bottom" constant="8" id="Ysw-zb-qVM"/>
+                            <constraint firstItem="spC-Sd-oAm" firstAttribute="top" secondItem="zq8-jW-yus" secondAttribute="bottom" id="gEa-RH-qXR"/>
+                            <constraint firstItem="9Bt-xZ-j96" firstAttribute="leading" secondItem="b4f-6C-zfd" secondAttribute="leadingMargin" id="iPZ-b6-0RV"/>
+                            <constraint firstAttribute="centerX" secondItem="zw0-sc-pOn" secondAttribute="centerX" id="jWa-gM-0wt"/>
+                            <constraint firstAttribute="centerY" secondItem="Mj2-r5-a7y" secondAttribute="centerY" constant="54" id="mT7-uM-dtw"/>
+                            <constraint firstAttribute="centerX" secondItem="MgH-Wt-iBR" secondAttribute="centerX" constant="-54" id="oLC-4T-Lre"/>
+                            <constraint firstAttribute="centerX" secondItem="xxZ-QT-QDv" secondAttribute="centerX" constant="8" id="uzJ-nk-5Ig"/>
+                            <constraint firstItem="2ov-87-eiV" firstAttribute="top" secondItem="zq8-jW-yus" secondAttribute="bottom" id="vfR-Up-gxb"/>
+                            <constraint firstItem="9Bt-xZ-j96" firstAttribute="trailing" secondItem="b4f-6C-zfd" secondAttribute="trailingMargin" id="zpQ-ov-ZMK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jWa-gM-0wt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="9Bt-xZ-j96" id="Bty-wP-qut"/>
+                        <outlet property="nextButton" destination="nGA-U6-suk" id="xAD-Hf-5vw"/>
+                        <outlet property="playButton" destination="xxZ-QT-QDv" id="mJn-KF-D5N"/>
+                        <outlet property="volumeControl" destination="zw0-sc-pOn" id="04a-Q3-24H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TU1-yK-vRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="666"/>
         </scene>
     </scenes>
     <resources>
@@ -282,5 +459,12 @@
         <image name="Animal-elephant" width="600" height="400"/>
         <image name="Animal-gorilla" width="236" height="354"/>
         <image name="Animal-monkey" width="600" height="400"/>
+        <image name="Horse" width="241" height="209"/>
+        <image name="Rooster" width="1078" height="951"/>
+        <image name="cat" width="1969" height="1937"/>
+        <image name="cow" width="500" height="402"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bEb-kf-eLJ"/>
+    </inferredMetricsTieBreakers>
 </document>
